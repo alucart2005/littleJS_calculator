@@ -10,7 +10,7 @@ buttons.forEach((item) => {
       display.innerText = string.substr(0, string.length - 1);
     } else if (display.innerText != "" && item.id == "equal") {
       display.innerText = eval(display.innerText);
-    } else if ((display.innerText == "" && item.id == "equal") || (display.innerText == "Infinity")){
+    } else if (display.innerText == "" && item.id == "equal" ){
       display.innerText = "Null";
       setTimeout(() => (display.innerText = ""), 2000);
     } else {
@@ -18,3 +18,13 @@ buttons.forEach((item) => {
     }
   };
 });
+
+// active toggle
+const themeToggleBtn = document.querySelector(".theme-toggler");
+const calculator = document.querySelector(".calculator");
+let isDark = true;
+themeToggleBtn.onclick=()=>{
+  calculator.classList.toggle("dark");
+  themeToggleBtn.classList.toggle("active");
+  isDark!=isDark
+} 

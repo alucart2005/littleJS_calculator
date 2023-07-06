@@ -78,17 +78,18 @@ body{
     }
   }
 }
-.theme-toggler{
+.theme-toggler {
   position: absolute;
   top: 30px;
   right: 30px;
-  color: white;
+  color: #fff;
   cursor: pointer;
   z-index: 1;
-  &::before{
-    content: "";
+  &::before {
+    content:'';
     position: absolute;
     height: 30px;
+    width: 30px;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -96,7 +97,7 @@ body{
     z-index: -1;
   }
 }
-.theme-toggler .active{
+.theme-toggler.active{
   color: #333;
   &::before{
     background-color: white;
