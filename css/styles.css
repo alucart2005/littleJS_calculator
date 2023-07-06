@@ -28,16 +28,21 @@ body {
   background-color: white;
 }
 .calculator #display {
+  position: static;
   top: 20px;
   color: #0a1e23;
   margin: 0 10px;
-  height: 130px;
-  width: 100%;
+  height: 150px;
+  max-width: 300px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 40px;
   font-weight: 600;
+  overflow-x: scroll;
+}
+.calculator #display::-webkit-scrollbar {
+  display: none;
 }
 .calculator #equal {
   height: 150px;
