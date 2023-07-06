@@ -35,10 +35,6 @@ body{
     font-size: 40px;
     font-weight: 600;
   }
-  #equal{
-    height: 150px;
-    border-radius: 25px;
-  }
   #clear{
     background-color: #ffd5d8;
     color: red;
@@ -52,8 +48,10 @@ body{
     color: #f967f3;
   }
   .btn-equal{
-    background-color: #adf9b7;
+    height: 150px;
     color: black;
+    background-color: #adf9b7;
+    border-radius: 25px;
   }
   // dark theme
   &.dark{
