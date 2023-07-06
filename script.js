@@ -9,7 +9,8 @@ buttons.forEach((item) => {
       let string = display.innerText.toString();
       display.innerText = string.substr(0, string.length - 1);
     } else if (display.innerText != "" && item.id == "equal") {
-      display.innerText = parseInt(eval(display.innerText)).toLocaleString("es");
+      display.innerText = eval(display.innerText);
+      // display.innerText = parseInt(eval(display.innerText)).toLocaleString("es");
     } else if (display.innerText == "" && item.id == "equal" ){
       display.innerText = "Null";
       setTimeout(() => (display.innerText = ""), 2000);
