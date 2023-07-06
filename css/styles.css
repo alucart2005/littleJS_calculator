@@ -24,11 +24,24 @@ body {
   width: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: inset 0 0 10px rgb(255, 192, 203);
+  box-shadow: inset 0 0 20px rgb(255, 192, 203);
   background-color: white;
 }
 .calculator #display {
+  top: 20px;
   color: #0a1e23;
+  margin: 0 10px;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.calculator #equal {
+  height: 150px;
+  border-radius: 25px;
 }
 .calculator #clear {
   background-color: #ffd5d8;
@@ -45,4 +58,67 @@ body {
 .calculator .btn-equal {
   background-color: #adf9b7;
   color: black;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  color: rgb(254, 253, 253);
+}
+.calculator.dark #clear {
+  background-color: #4c35aa;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: #8efda6;
+}
+.calculator.dark .btn-operator {
+  background-color: rgb(219, 214, 62);
+  color: rgb(111, 8, 13);
+}
+.calculator.dark .btn-equal {
+  background-color: red;
+  color: white;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler .active {
+  color: #333;
+}
+.theme-toggler .active::before {
+  background-color: white;
+}
+
+button {
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 35%;
+  margin: 6px;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=styles.css.map */
