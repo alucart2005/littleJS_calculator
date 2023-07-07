@@ -91,16 +91,17 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #333;
+    background-color: #963434;
     z-index: -1;
   }
-}
-.theme-toggler.active{
-  color: #333;
-  &::before{
-    background-color: white;
+  &.active{
+    color: #333;
+    &::before{
+      background-color: white;
+    }
   }
 }
+
 button{
   height: 70px;
   width: 70px;

@@ -39,10 +39,6 @@ body {
   font-size: 40px;
   font-weight: 600;
 }
-.calculator #equal {
-  height: 150px;
-  border-radius: 25px;
-}
 .calculator #clear {
   background-color: #ffd5d8;
   color: red;
@@ -56,8 +52,10 @@ body {
   color: #f967f3;
 }
 .calculator .btn-equal {
-  background-color: #adf9b7;
+  height: 150px;
   color: black;
+  background-color: #adf9b7;
+  border-radius: 25px;
 }
 .calculator.dark {
   background-color: #1b1b1b;
@@ -97,10 +95,9 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: #333;
+  background-color: #963434;
   z-index: -1;
 }
-
 .theme-toggler.active {
   color: #333;
 }

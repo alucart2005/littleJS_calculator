@@ -20,11 +20,11 @@ buttons.forEach((item) => {
 });
 
 // active toggle
-const themeToggleBtn = document.querySelector(".theme-toggler");
 const calculator = document.querySelector(".calculator");
-let isDark = true;
+const themeToggleBtn = document.querySelector(".theme-toggler");
 themeToggleBtn.onclick=()=>{
   calculator.classList.toggle("dark");
+  console.log(calculator.classList);
   themeToggleBtn.classList.toggle("active");
-  isDark!=isDark
+  console.log(themeToggleBtn.classList);
 } 
